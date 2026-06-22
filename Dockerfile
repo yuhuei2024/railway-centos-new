@@ -1,7 +1,3 @@
-x-ui setting -username text01 -password 123456789
-
-
-
 # 1. 使用 centos:7 作为基础镜像
 FROM centos:7
 
