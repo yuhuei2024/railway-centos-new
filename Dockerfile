@@ -2,6 +2,7 @@
 FROM centos:7
 
 # 2. 修复源并安装必要的依赖 (curl 和 wget 是必须的)
+# Forced rebuild
 RUN sed -i 's/mirror.centos.org/vault.centos.org/g' /etc/yum.repos.d/*.repo && \
     sed -i 's/^#.*baseurl=http/baseurl=http/g' /etc/yum.repos.d/*.repo && \
     sed -i 's/mirrorlist=http/#mirrorlist=http/g' /etc/yum.repos.d/*.repo && \
